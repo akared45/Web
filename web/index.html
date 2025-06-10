@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel - Tour Du Lịch Cao Cấp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Luxury<span>Travel</span></a>
+            <nav class="navbar">
+                <a href="#home" class="nav-link">Trang chủ</a>
+                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#tours" class="nav-link">Tour</a>
+                <a href="#gallery" class="nav-link">Thư viện</a>
+                <a href="#reviews" class="nav-link">Đánh giá</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Khám Phá Thế Giới Cùng Chúng Tôi</h1>
+            <p class="hero-subtitle">Trải nghiệm du lịch cao cấp với dịch vụ đẳng cấp nhất</p>
+            <a href="#tours" class="btn btn-primary">Khám phá ngay</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Cuộn xuống</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Về Chúng Tôi</h2>
+                <p class="section-subtitle">Đẳng cấp trong từng dịch vụ</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hơn 10 năm kinh nghiệm trong ngành du lịch cao cấp</h3>
+                    <p>Chúng tôi tự hào là đơn vị tổ chức tour du lịch cao cấp hàng đầu Việt Nam, mang đến cho khách
+                        hàng những trải nghiệm không thể nào quên.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Đội ngũ hướng dẫn viên chuyên nghiệp</li>
+                        <li><i class="fas fa-check"></i> Dịch vụ 5 sao trên mọi hành trình</li>
+                        <li><i class="fas fa-check"></i> Thiết kế tour riêng biệt theo yêu cầu</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ 24/7 trong suốt chuyến đi</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-box">
+                        <img src="images/about-image.png" alt="Về chúng tôi" class="main-image">
+                        <div class="experience-box">
+                            <span class="number">10+</span>
+                            <span class="text">Năm kinh nghiệm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours section" id="tours">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tour Nổi Bật</h2>
+                <p class="section-subtitle">Những hành trình đáng trải nghiệm nhất</p>
+            </div>
+            <div class="tours-grid">
+            </div>
+        </div>
+        <div class="modal" id="tourModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <picture><img src="" alt="Tour image" id="modalTourImage"></picture>
+                        
+                    </div>
+                    <div class="modal-info">
+                        <h2 id="modalTourTitle"></h2>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-calendar-alt"></i> <span id="modalTourDuration"></span></span>
+                            <span><i class="fas fa-users"></i> <span id="modalTourGroupSize"></span></span>
+                            <span><i class="fas fa-tag"></i> <span id="modalTourPrice"></span></span>
+                        </div>
+                        <p id="modalTourDescription"></p>
+                        <h3>Lịch trình tour</h3>
+                        <div class="timeline" id="tourTimeline"></div>
+
+                        <a href="#contact" class="btn btn-primary">Đặt tour ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Thư Viện Ảnh</h2>
+                <p class="section-subtitle">Những khoảnh khắc đáng nhớ</p>
+            </div>
+            <div class="gallery-grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Đánh Giá</h2>
+                <p class="section-subtitle">Cảm nhận của khách hàng</p>
+            </div>
+            <div class="reviews-slider">
+                <div class="slider-controls">
+                    <button class="prev-review"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-review"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên Hệ</h2>
+                <p class="section-subtitle">Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h3>Địa chỉ</h3>
+                            <p>Số 123, Đường ABC, Quận 1, TP.HCM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-content">
+                            <h3>Điện thoại</h3>
+                            <p>+84 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@luxurytravel.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Nội dung" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>LuxuryTravel</h3>
+                    <p>Đơn vị tổ chức tour du lịch cao cấp hàng đầu Việt Nam, mang đến những trải nghiệm không thể nào
+                        quên.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên kết</h3>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#tours">Tour</a></li>
+                        <li><a href="#gallery">Thư viện</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Tour phổ biến</h3>
+                    <ul>
+                        <li><a href="#">Châu Âu sang trọng</a></li>
+                        <li><a href="#">Đông Nam Á nhiệt đới</a></li>
+                        <li><a href="#">Bắc Mỹ hiện đại</a></li>
+                        <li><a href="#">Nam Mỹ hoang dã</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Bản tin</h3>
+                    <p>Đăng ký để nhận thông tin về các tour mới nhất</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LuxuryTravel. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>
