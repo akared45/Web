@@ -237,17 +237,16 @@ function loadGallery() {
 
 function loadReviews() {
     reviewsSlider.innerHTML = `
-            <div class="review-card" data-animate>
-                <div class="review-avatar">
-                    <img src="${reviews[currentReview].avatar}" alt="${reviews[currentReview].author}">
-                </div>
-                <p class="review-text">"${reviews[currentReview].text}"</p>
-                <h4 class="review-author">${reviews[currentReview].author}</h4>
-                <div class="review-rating">${reviews[currentReview].rating}</div>
+        <div class="review-card animate" data-animate>
+            <div class="review-avatar">
+                <img src="${reviews[currentReview].avatar}" alt="${reviews[currentReview].author}">
             </div>
-        `;
+            <p class="review-text">"${reviews[currentReview].text}"</p>
+            <h4 class="review-author">${reviews[currentReview].author}</h4>
+            <div class="review-rating">${reviews[currentReview].rating}</div>
+        </div>
+    `;
 }
-
 function showNextReview() {
     currentReview = (currentReview + 1) % reviews.length;
     loadReviews();

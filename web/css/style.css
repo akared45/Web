@@ -1,4 +1,3 @@
-/* Reset và Base Styles */
 :root {
     --primary-color: #ff7f50;
     --secondary-color: #1e90ff;
@@ -445,10 +444,13 @@ img {
     font-size: 3rem;
 }
 
-/* Reviews Section */
-.reviews-slider {
+.reviews-container {
     position: relative;
     padding: 0 5rem;
+}
+
+.reviews-slider {
+    margin-bottom: 3rem;
 }
 
 .review-card {
@@ -457,7 +459,6 @@ img {
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     text-align: center;
-    margin: 0 1rem;
 }
 
 .review-avatar {
@@ -522,8 +523,38 @@ img {
 
 .slider-controls button:hover {
     background-color: #ff6347;
+    transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+    .reviews-container {
+        padding: 0 3rem;
+    }
+    
+    .review-card {
+        padding: 2rem;
+    }
+    
+    .slider-controls button {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews-container {
+        padding: 0 1rem;
+    }
+    
+    .slider-controls {
+        position: static;
+        transform: none;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+}
 /* Contact Section */
 .contact-content {
     display: flex;
@@ -732,7 +763,6 @@ img {
     transform: translateY(-0.5rem);
 }
 
-/* Preloader */
 .preloader {
     position: fixed;
     top: 0;
@@ -759,8 +789,6 @@ img {
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
-
-/* Responsive Styles */
 @media (max-width: 992px) {
     .about-content {
         flex-direction: column;
@@ -972,7 +1000,7 @@ img {
 
 .timeline-item {
     position: relative;
-    padding-left: 4rem; /* Giảm xuống cho gọn */
+    padding-left: 4rem; 
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateX(-20px);
@@ -987,7 +1015,7 @@ img {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 1.5rem; /* Giữ nguyên */
+    left: 1.5rem;
     top: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
